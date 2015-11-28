@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--Edit the title of the page-->
+    <title>RTA Street Harassment Reporting App</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+    <link href="~/Content/dark-theme.css" rel="stylesheet" />
+    <link href="~/Content/light-theme.css" rel="stylesheet" />
+    <link href="~/Content/makeitresponsive.css" rel="stylesheet" />
+    <link href="~/Content/leaflet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/light-theme.css">
+    <link rel="stylesheet" href="css/makeitresponsive.css">
+</head>
+<body>
+    <div class="map" id="map"></div>
+    <div class="sidepanel">
+        <div class="wrapper">
+            <h1>RTA Street Harassment Reporting App</h1>
+            <h3>What is Street Harassment?</h3>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&v=3.8"></script>
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+    
+
+    <script type="text/javascript">
+        cartodb.createVis('map', 'https://indirasam.cartodb.com/api/v2/viz/d49407fe-93bb-11e5-b838-0e5db1731f59/viz.json');
+    </script>
+
+    <script src="~/Scripts/leaflet-0.7.3.min.js"></script>
+</body>
+</html>
